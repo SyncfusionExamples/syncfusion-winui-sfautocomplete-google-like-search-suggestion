@@ -18,12 +18,9 @@ namespace GoogleSearchDemo
             GetGoogleSuggestions("test");
         }
 
-        private Task<object> activeTask;
-
         public Task<object> GetMatchingItemsAsync(SfAutoComplete source, AutoCompleteFilterInfo filterInfo)
         {
-            activeTask = GetGoogleSuggestions(filterInfo.Text);
-            return activeTask;
+            return GetGoogleSuggestions(filterInfo.Text);
         }
 
         private async Task<object> GetGoogleSuggestions(string query)
