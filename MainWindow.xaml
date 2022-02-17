@@ -1,0 +1,21 @@
+﻿<Window
+    x:Class="GoogleSearchDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GoogleSearchDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Editors"
+    mc:Ignorable="d">
+    <Grid>
+        <editors:SfAutoComplete HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                PlaceholderText="Search something"
+                                TextSearchMode="Contains"
+                                Width="300">
+            <editors:SfAutoComplete.FilterBehavior>
+                <local:CustomFiltering/>
+            </editors:SfAutoComplete.FilterBehavior>
+        </editors:SfAutoComplete>
+    </Grid>
+</Window>

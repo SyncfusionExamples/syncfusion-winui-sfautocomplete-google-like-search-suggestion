@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GoogleSearchDemo (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GoogleSearchDemo (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
